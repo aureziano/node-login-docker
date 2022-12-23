@@ -12,9 +12,9 @@ const path = require('path');
 //   path: process.env.NODE_ENV === "test" ? ".env.sample" : "../.env"
 // });
 require('dotenv').config({ path: path.join(__dirname, '../.env') });
-console.log(process.env.NODE_ENV) // dev
-console.log(process.env.NODE_ENV === 'dev') // false
-console.log(process.env.NODE_ENV.length) // 4 (including a space at the end) 
+// console.log(process.env.NODE_ENV) // dev
+// console.log(process.env.NODE_ENV === 'dev') // false
+// console.log(process.env.NODE_ENV.length) // 4 (including a space at the end) 
 
 const app = express();
 
